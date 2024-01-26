@@ -4,6 +4,7 @@ const connectDB = require("./config/db");
 const productRoutes = require("./routes/productRoutes");
 const userRoutes = require("./routes/userRoutes");
 const orderRoutes = require("./routes/orderRoutes");
+const path = require('path');
 
 const cors = require("cors");
 

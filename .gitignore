@@ -1,1 +1,4 @@
 backend/.env
+
+# add node_modules to .gitignore
+echo "node_modules" >> .gitignore

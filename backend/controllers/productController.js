@@ -106,6 +106,9 @@ const createProductReview = asyncHandler(async (req, res) => {
 
     product.reviews.push(review);
 
+    // Set the user on the product
+    product.user = req.user._id;
+
     // update the number of reviews
     product.numReviews = product.reviews.length;
 
