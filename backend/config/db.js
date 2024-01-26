@@ -1,14 +1,12 @@
 const mongoose = require("mongoose");
 
-const connectDB = async (req,res) => {
+const connectDB = async () => {
   try {
     await mongoose.connect(process.env.MONGO_URI, {});
     console.log("MongoDB Connected");
   } catch (error) {
-    res.status(500).json({
-      success: false,
-      message: "Internal Server Error",
-    });
+    console.error("Error connecting to MongoDB:", error.message);
+    process.exit(1); //
   }
 };
 
