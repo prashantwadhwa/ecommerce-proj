@@ -43,7 +43,7 @@ const Cart = () => {
         </h1>
         {cartItems.length === 0 ? (
           <Message>
-            Your Shopping Cart is empty. <Link to="/">Continue Shopping</Link>
+            Your Shopping Cart is empty. <Link to="/" className="text-decoration-none">Continue Shopping</Link>
           </Message>
         ) : (
           <ListGroup variant="flush">
@@ -55,14 +55,14 @@ const Cart = () => {
                   </Col>
 
                   <Col md={3}>
-                    <Link to={`/product/${item._id}`}>{item.name}</Link>
+                    <Link to={`/product/${item._id}`} className="text-decoration-none">{item.name}</Link>
                   </Col>
 
                   <Col md={2} style={{ fontWeight: "bold" }}>
                     Rs {item.price}/-
                   </Col>
 
-                  <Col md={2}>
+                  <Col md={2} >
                     <Form.Control
                       as="select"
                       value={item.qty}
