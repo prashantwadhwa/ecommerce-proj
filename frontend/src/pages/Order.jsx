@@ -247,12 +247,12 @@ const Order = () => {
                         <Loader />
                       ) : (
                         <div className="text-center my-3">
-                          <Button
+                          {/* <Button
                             onClick={onApproveTest}
                             style={{ marginBottom: "10px" }}
                           >
-                            Cash On Delivery
-                          </Button>
+                            Test Payment Button
+                          </Button> */}
                           <div>
                             <PayPalButtons
                               createOrder={createOrder}

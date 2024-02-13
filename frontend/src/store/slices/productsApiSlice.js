@@ -3,11 +3,12 @@ import { apiSlice } from "./apiSlice";
 
 export const productsApiSlice = apiSlice.injectEndpoints({
   endpoints: (builder) => ({
+
     getProducts: builder.query({
       query: ({ keyword } = {}) => ({
         url: PRODUCTS_URL,
         params: {
-          keyword,
+          keyword, // to get the products by searching
         },
         headers: {
           Authorization: `Bearer ${JSON.parse(localStorage.getItem("token"))}`,

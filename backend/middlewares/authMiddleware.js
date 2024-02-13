@@ -11,18 +11,14 @@ const protect = asyncHandler(async (req, res, next) => {
   if (
     req.headers.authorization &&
     req.headers.authorization.startsWith("Bearer")
-
-
   ) {
     try {
-
       // Split the authorization header and get the token
       const token = req.headers.authorization.split(" ")[1];
 
       const decodedData = await jwt.verify(token, process.env.JWT_SECRET, {
         algorithm: "HS256",
       });
-
 
       if (decodedData) {
         req.user = await User.findById(decodedData.userId).select("-password");
@@ -37,7 +33,6 @@ const protect = asyncHandler(async (req, res, next) => {
     } catch (error) {
       console.error(error);
 
-      // Log the error message to help identify the issue
       console.error("JWT Verification Error:", error.message);
 
       res.status(401).json({
