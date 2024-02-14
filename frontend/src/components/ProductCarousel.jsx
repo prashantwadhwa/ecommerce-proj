@@ -18,7 +18,7 @@ const ProductCarousel = () => {
       {products.map(product => (
         <Carousel.Item key={product._id}>
           <Link to={`product/65ab7f6ba00ee82db443e546`}>
-            <Image src="https://private-user-images.githubusercontent.com/77116676/304632662-be8a7702-a784-4bd8-a67b-30e39e9cb14e.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDc4OTIxNDYsIm5iZiI6MTcwNzg5MTg0NiwicGF0aCI6Ii83NzExNjY3Ni8zMDQ2MzI2NjItYmU4YTc3MDItYTc4NC00YmQ4LWE2N2ItMzBlMzllOWNiMTRlLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAyMTQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMjE0VDA2MjQwNlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTBkYTk3NmY4ZTc3ODc1NDFlMjI4ODRhNjUxMjQyNDNhMzI4ODUzMDRjMDdlOTYwYWE3ZjM5ZTA3YWYxNTgxY2QmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.nm6gSPubZLg9fmysJHuD5gkKeFolP5FgYRa0MREB9Gw"/>
+            <Image src="https://uc7ba8c8df86834e318672a1948b.previews.dropboxusercontent.com/p/thumb/ACJ9Z-UYN3WUv2sTJ5aiBQfDZTNc6B582_AYnDl28wJBmga8wkmlFffLU7cNLkt-T8bRJ-c_VaR8XixVPOxAsu4rJswOUMzzMQR0Dn4Ec7C6aUQT-w11JfKMpnY310JPPEzA_Quc300fw-BWX8b6RoRUi14avH2CiPd5IWBopSjwtPA6ljYPz2IC5etUYKMIXIrggcUjVB-yAGQ2SirgNcC9k7AfB9YGpfMOSmgpkKYD2nU_9N-v9ksIBxmlZQqkSigb7dxnEBP-v5mkvlD4EzVjrjizVDafFHE0DqH3b-CZ2Qrv7vVjejsx6Qr-jv7Xf0ZO1ZpkulK1TemQKQLtTQN1giU_bix5U-6RNWNJtY-5l_aa-3A-r_xlaMFA3RZ5f3g/p.png"/>
             {/* <Carousel.Caption className="carousel-caption">
               <h2>
                 {product.name} (Rs {product.price})
