@@ -12,7 +12,6 @@ import { useDispatch, useSelector } from "react-redux";
 import Loader from "../components/Loader";
 
 const Register = () => {
-
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
@@ -47,10 +46,8 @@ const Register = () => {
       try {
         // dispatching register action
         const res = await register({ name, email, password }).unwrap();
-        dispatch(setCredentials({ ...res }));
 
-        toast.success("Registered successfully");
-        navigate(redirect);
+        toast.success("Registered successfully. Please login to continue.");
       } catch (err) {
         console.log(err.message);
         toast.error(err?.data?.message || err.error);
@@ -107,7 +104,10 @@ const Register = () => {
           <Row className="py-1">
             <Col>
               Already Registered?{" "}
-              <Link to={redirect ? `/login?redirect=${redirect}` : "/login"} className="text-decoration-none">
+              <Link
+                to={redirect ? `/login?redirect=${redirect}` : "/login"}
+                className="text-decoration-none"
+              >
                 Login Now!
               </Link>
             </Col>

@@ -240,7 +240,7 @@ const Products = () => {
                   {userInfo ? (
                     <Form onSubmit={reviewHandler}>
                       <Form.Group controlId="rating" className="my-2">
-                        <Form.Label>Rating</Form.Label>
+                        <Form.Label>Rating <span style={{color: "red"}}>*</span> </Form.Label>
                         <Form.Control
                           as="select"
                           value={rating}
@@ -262,7 +262,7 @@ const Products = () => {
                           row="3"
                           value={comment}
                           onChange={(e) => setComment(e.target.value)}
-                          placeholder="Write your review here..."
+                          placeholder="Write your review here... (optional)"
                         ></Form.Control>
                       </Form.Group>
 
