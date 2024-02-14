@@ -69,7 +69,7 @@ const ProductEdit = () => {
   };
 
   return (
-    <>
+    <div className="py-5 ">
       <Link to="/admin/productlist">
         <Button className="btn btn-blue my-3">Go Back</Button>
       </Link>
@@ -162,7 +162,7 @@ const ProductEdit = () => {
           </Form>
         )}
       </div>
-    </>
+    </div>
   );
 };
 

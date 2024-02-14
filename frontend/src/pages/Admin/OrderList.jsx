@@ -13,7 +13,7 @@ const OrderList = () => {
 
 
   return (
-    <div className="order py-5 m-3">
+    <div className="order-main py-5 my-5 p-5 m-4">
       <h1 className="text-center py-2">
         <b>Orders</b>
       </h1>

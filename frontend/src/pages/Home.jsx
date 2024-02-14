@@ -12,7 +12,7 @@ const Home = () => {
   const { data: products, isLoading, error } = useGetProductsQuery({ keyword });
 
   return (
-    <>
+    <div className="py-5">
       {!keyword ? (
         <>
           <h1 className="order my-3 mb-4">
@@ -53,7 +53,7 @@ const Home = () => {
           ))}
         </Row>
       )}
-    </>
+    </div>
   );
 };
 

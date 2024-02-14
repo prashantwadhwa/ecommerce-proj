@@ -91,7 +91,7 @@ const Products = () => {
   };
 
   return (
-    <>
+    <div className="py-5 ">
       {isLoading ? (
         <Loader />
       ) : error ? (
@@ -281,7 +281,7 @@ const Products = () => {
           </div>
         </>
       )}
-    </>
+    </div>
   );
 };
 

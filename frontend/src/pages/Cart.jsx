@@ -36,7 +36,7 @@ const Cart = () => {
   };
 
   return (
-    <Row>
+    <Row className="py-5 my-4">
       <Col md={8}>
         <h1 style={{ marginBottom: "2.5rem" }}>
           <strong>Shopping Cart</strong>

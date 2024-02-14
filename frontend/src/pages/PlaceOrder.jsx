@@ -54,8 +54,8 @@ const PlaceOrder = () => {
   };
 
   return (
-    <>
-      <div className="order-box">
+    <div className="py-5 my-4">
+      <div className="order-box ">
         <CheckoutSteps step1 step2 step3 step4 />
         <Row>
           <Col md={8}>
@@ -173,7 +173,7 @@ const PlaceOrder = () => {
           </Col>
         </Row>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -44,7 +44,7 @@ const ProductsList = () => {
   };
 
   return (
-    <div className="order">
+    <div className="products-box py-5 my-5">
       <Row>
         <Col>
           <h1>

@@ -39,8 +39,14 @@ const Header = () => {
   };
 
   return (
-    <header>
-      <Navbar bg="primary" variant="dark" expand="lg" collapseOnSelect>
+    <>
+      <Navbar
+        bg="primary"
+        variant="dark"
+        expand="lg"
+        collapseOnSelect
+        className="fixed-top "
+      >
         <Container>
           <LinkContainer to="/">
             <Navbar.Brand>Ecom Shopping</Navbar.Brand>
@@ -48,7 +54,7 @@ const Header = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-            <SearchBox/>
+              <SearchBox />
               <LinkContainer to="/cart">
                 <Nav.Link
                   className={`text-white ${isCartPage ? "cart-active" : ""}`}
@@ -109,14 +115,13 @@ const Header = () => {
                   <LinkContainer to="/admin/orderlist">
                     <NavDropdown.Item>Orders</NavDropdown.Item>
                   </LinkContainer>
-                  
                 </NavDropdown>
               )}
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    </header>
+    </>
   );
 };
 
