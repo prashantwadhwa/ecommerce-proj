@@ -18,7 +18,7 @@ const ProductCarousel = () => {
       {products.map(product => (
         <Carousel.Item key={product._id}>
           <Link to={`product/65ab7f6ba00ee82db443e546`}>
-            <Image src="https://www.dropbox.com/scl/fi/4bhdrepjq3rbyoj9bqcrb/Frame-8.png?rlkey=bzvczgbcs3h3wx5wcg27w06np&dl=0"/>
+            <Image src="https://res.cloudinary.com/ds4yjzz0r/image/upload/v1708162927/Frame_8_iqtz96.png"/>
             {/* <Carousel.Caption className="carousel-caption">
               <h2>
                 {product.name} (Rs {product.price})
